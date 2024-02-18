@@ -1,0 +1,174 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap') */
+
+
+:root{
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Tomato: hsl(4, 100%, 67%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --family: "Roboto";
+    --fw-semi: 400;
+    --fw-bold: 500;
+    --fw-xbold: 700;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1440px;
+    min-width: 375px;
+    /* background-color: var(--Dark-Slate-Grey); */
+    font-family: var(--family);
+  
+}
+
+.main-container{
+    height: 100vh;
+}
+
+main{
+    /* background-image: url(../assets/images/icon-success.svg); */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.bac1{
+    /* background-color: var(--White); */
+    width: 375px;
+    height: 650px;
+   
+}
+
+.card-image img{
+    width: 100%;
+    /* object-fit: contain; */
+}
+section{
+    padding: 10px;
+    margin-top: -3rem;
+}
+
+.icon{
+    
+}
+
+.head1 p{
+    font-size: 16px;
+    /* margin-top: 10px; */
+}
+.checkbox{
+    margin-top: 1rem;
+}
+
+.checkbox p{
+    padding-left: 5px;
+}
+
+.check1{
+    display: flex;
+    align-content: center;
+    padding-left: 8px;
+}
+
+.check2{
+    display: flex;
+    align-content: center;
+    padding-left: 8px;
+}
+.check3{
+    display: flex;
+    align-content: center;
+    padding-left: 8px;
+}
+.checkbox p{
+    font-size: 16px;
+}
+.head1 h1{
+    font-size: 35px;
+    font-weight: var(--fw-xbold);
+    margin-top: 20px;
+}
+form:hover{
+    cursor: pointer;
+}
+.btn{
+    background-color: var(--Dark-Slate-Grey) !important;
+    width: 100%;
+    height: 7vh;
+    margin-top: 11rem;
+}
+.btn:hover{
+    background-color: var(--Tomato)!important;
+    /* box-shadow: var(--Tomato); */
+    box-shadow: 3px 0px 3px var(--Tomato);
+}
+
+
+@media (min-width: 900px){
+    body {
+        background-color: var(--Dark-Slate-Grey) !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .main-container {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 65vh;
+        background-color: var(--White);
+        padding: 15px;
+        border-radius: 30px;
+      }
+      /* main {
+        width: 45% !important;
+        height: 70vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+        background-size: cover;
+        background-position: 100%;
+        border-radius: 10px;
+      } */
+      section {
+        width: 100% !important;
+        height: 30vh;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+      }
+      .head1 h1{
+        font-size: 63px;
+        font-weight: var(--fw-xbold);
+        
+    }
+
+    section, img h1{
+        margin-top: 4rem;
+    }
+    .btn{
+        margin-top: 5rem;
+        box-shadow: 10px 10px;
+    }
+    .checkbox p{
+        padding-left: 15px;
+    }
+    .form{
+        margin-top: 5px;
+    }
+}
